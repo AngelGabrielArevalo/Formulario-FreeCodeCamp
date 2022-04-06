@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Formulario de inscripción</h1>
+          <p id="description" class="text-center">
+            Formulario de inscripción a tecnicatura
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="div-form">
+            <label for="name" id="name-label">
+              Nombre
+            </label>
+            <input
+                   type="text"
+                   id="name"
+                   name="name"
+                   class="form-control"
+                   placeholder="Introduzca su nombre"
+                   required />
+          </div>
+          <div class="div-form">
+            <label for="email" id="email-label">
+              Email
+            </label>
+            <input
+                   type="email"
+                   id="email"
+                   name="email"
+                   class="form-control"
+                   placeholder="Introduzca su email"
+                   required />
+          </div>
+          <div class="div-form">
+            <label for="number" id="number-label">
+              Edad<span class="label-span">(opcional)</span>
+            </label>
+            <input 
+                   type="number"
+                   id="number"
+                   name="number"    
+                   min="16"
+                   max="100"
+                   placeholder="Edad"
+                   class="form-cotrol" />           
+          </div>
+          <div class="div-form">
+            <label for="dropdown" id="select-label">
+              ¿Cuàl es su ocupaciòn actual?
+            </label>
+            <select id="dropdown" class="form-control" name="dropdown" required>
+              <option id="option-selection" name="option-selection" disable select value>
+                Seleccione su ocupaciòn
+              </option>
+              <option id="otion-estudiante" name="option-estudiante" value="estudiante">
+                Estudiante
+              </option>
+              <option id="option-trabajofulltime" name="option-trabajofulltime" value="trabajofulltime">
+                Trabajo FullTime
+              </option>
+              <option id="option-estudiantefulltime" name="option-estudiantefulltime" value="estudiantefulltime">
+                Estudiante FullTime
+              </option>
+              <option id="option-preferencia" name="option-preferencia" value="preferencia">
+                Prefiero no decirlo
+              </option>
+              <option id="option-otro" name="option-otro" value="otro">
+                Otro
+              </option>
+            </select>
+          </div>
+          <div class="div-form">
+            <p>
+              ¿Recomendarias este curso a un amigo?
+            </p>
+            <label>
+              <input 
+                     type="radio"
+                     name="recomendarcurso"
+                     class="input-radio"
+                     value="definitivamente"
+                     checked />
+              Definitivamente
+            </label>
+            <label>
+              <input 
+                     type="radio"
+                     name="recomendarcurso"
+                     class="input-radio"
+                     value="quizas" />
+              Quizas
+            </label>
+            <label>
+              <input
+                     type="radio"
+                     name="recomendarcurso"
+                     value="noestoyseguro"
+                     class="input-radio" />
+              No estoy seguro
+            </label>         
+          </div>
+          <div class="div-form">
+            <p>
+              ¿Qué te gustaria ver mejorado?
+              <span id="p-span-checkbox" class="p-span-checkbox">(Marque todas las que corresponda)</span>
+            </p>
+            <label>
+              <input
+                     type="checkbox"
+                     name="mejora"
+                     value="frontend"
+                     class="input-checkbox" />
+              Proyectos Front-End
+            </label>
+            <label>
+              <input
+                     type="checkbox"
+                     name="mejora"
+                     value="backend"
+                     class="input-checkbox" />
+              Proyectos Back-End
+            </label>
+            <label>
+              <input 
+                     type="checkbox"
+                     name="mejora"
+                     class="input-checkbox"
+                  value="visualizaciondedatos" />
+              Visualización de datos
+            </label>
+            <label>
+              <input 
+                     type="checkbox"
+                     name="mejora"
+                     class="input-checkbox"
+                  value="desafios" />
+              Desafios
+            </label>
+            <label>
+              <input 
+                     type="checkbox"
+                     name="mejora"
+                     class="input-checkbox"
+                  value="comunidad" />
+                  Comunidad
+            </label>
+            <label>
+              <input 
+                     type="checkbox"
+                     name="mejora"
+                     class="input-checkbox"
+                  value="salasdeayuda" />
+               Salas de ayuda
+           </label>
+            <label>
+              <input 
+                     type="checkbox"
+                     name="mejora"
+                     class="input-checkbox"
+                  value="foro" />
+              Foro
+            </label>
+          </div>
+          <div class="div-form">
+            <label id="textarea-label" for="textarea">
+              ¿Tiene comentarios que aportar?
+            </label>
+            <textarea 
+                      name="textarea"
+                      id="textarea"
+                      class="input-textarea"
+                      placeholder="Introduzca sus comentarios..."></textarea>  
+          </div>
+          <div class="div-form">
+            <button
+                   type="submit"
+                   name="submit"
+                   id="submit"
+                   class="input-submit" >
+              Enviar
+            </button>
+          </div>
+                      
+          
+        </form>
+      </div>
+</body>
+</html>
